@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatica</title>
+    <link rel="stylesheet" href="tecnoLife.css">
+</head>
+<body>
+
+    <div class="menu1">
+
+        <button onclick="casa()" style="cursor: pointer; font-weight: bold; background-color: #000;" id="Informatica" class="conf1">Informatica</button>
+        <button onclick="Cadastrar()" id="cadastro" class="conf2">Cadastro</button>
+        <button onclick="Login()" id="Login" class="conf2">Login</button>
+        <button onclick="dados_Dos_Alunos()" class="conf2">Alunos</button>
+        <button onclick="novo()" style="color: yellow; font-weight: bold;" id="nom1" class="conf3">Smart School</button>
+        
+    </div>
+
+    <section id="sect1" class="sect1">
+        <!-- inicio de formatação do menu2 -->
+        <div id="menu2" class="menu2">
+
+            <button id="titulo" class="titulo"><h1 id="usuario">Curso De Informatica</h1></button>
+            <!-- inicio da formatação do submenu -->
+            <div style="display: block;" id="submenu" class="submenu">
+
+                <button onclick="recomendacao()" id="conf4" class="conf4 E_C_D_C">Recomendações</button>
+                <button onclick="modulo()" id="conf4" class="conf4">Modulos</button>
+                <button onclick="restricao()" id="conf4" class="conf4">Restrição</button>
+                <button onclick="horario()" id="conf4" class="conf4">Horario</button>
+                <button onclick="Exercicios()" id="conf4" class="conf4 E_B_D_B">Exercicios</button>
+    
+            </div>
+            <!-- fim da formatação do submenu -->
+
+
+
+            <!-- inicio da formatação dos exercicios -->
+
+            <div style="display: none;" id="submenu" class="exercicios2">
+
+               <button onclick="Exer1()" class="exe1">Exercicio: Aula 001</button>
+               <button onclick="Exer2()" class="exe1">Exercicio: Aula 002</button>
+               <button onclick="Exer3()" class="exe1">Exercicio: Aula 003</button>
+               <button onclick="Exer4()" class="exe1">Exercicio: Aula 004</button>
+               <button onclick="Exer5()" class="exe1">Exercicio: Aula 005</button>
+               <button onclick="Exer6()" class="exe1">Exercicio: Aula 006</button>
+               <button onclick="Exer7()" class="exe1">Exercicio: Aula 007</button>
+               <button onclick="Exer8()" class="exe1">Exercicio: Aula 008</button>
+               <button onclick="Exer9()" class="exe1">Exercicio: Aula 009</button>
+               <button onclick="Exer10()" class="exe1">Exercicio: Aula 010</button>
+               
+            </div>
+            
+
+            <!-- fim da formatação dos exercicios -->
+
+            <!-- inicio da formataçãp do submenu2 -->
+
+            <div style="display: none;" id="submenu" class="btn1">
+
+                <!-- <button id="conf4" class="conf5">Primeiro Modulo</button> -->
+                <button onclick="primeira()" id="conf4" class="licao">Primeira lição de <i>HTML</i></button>
+
+                
+            </div>
+
+            <!-- fim da formatação do submenu2 -->
+
+
+        </div>
+        <!-- fim da formatação do menu2 -->
+
+        <div id="menu3" class="menu3">
+
+            <div class="submenu2">
+                <button class="texto1">Aprenda a Desenvolver Sites Na Smart School</button>
+            </div>
+
+            <div id="inicio" class="inicio1">
+
+                <!-- Inicio da formatação das recomendação do curso -->
+                <div style="display: none;" class="recomendacao">
+                    <div class="menu4"><button class="submenu3">Recomendações Para o Curso</button></div>
+                    <div class="menu5">
+                        <button class="lista1">Criar uma conta na Unitel Many <i>ou</i> contactar um intermediario</button>
+                        <button class="lista1">Cadastrar-se no Curso de Programação</button>
+                        <button class="lista1"><i>Telefone....:</i> Instalar o web code </button>
+                        <button class="lista1"><i>Computador..:</i> Instalar o Visual Studio Code</button>
+                        <button onclick="Intermediario()" class="lista1">Si cadastrar por intermedio de um entermediario</button>
+                    </div>
+                </div>
+                 <!-- fim da formatação das recomendação do curso -->
+
+                <!-- inicio da formatação dos modulos para o curso -->        
+                <div style="display: none;" class="modulo" id="modulo">
+
+                    <div class="menu4"><button class="submenu3">Modulos do curso de programação</button></div>
+                    <div class="menu5">
+                        <button class="lista1">Primeiro Modulo [1] =  20 aulas de <i>HTML</i></button>
+                        <button class="lista1">Segundo Modulo  [2] =  20 aulas de <i>HTML e CSS</i></button>
+                        <button class="lista1">Terceiro Modulo [3] =  20 aula de <i>HTML/CSS/JAVASCRIPT</i> </button>
+                        <button class="lista1">Quarto Modulo   [4] =  20 aula para a criação do primeiro projecto</button>
+                        <button class="lista1">Quinto Modulo   [5] =  20 aula para a criação do segundo projecto</button>
+                    </div>
+
+                </div>
+                <!-- fim da formatação dos modulos para o curso -->
+
+                <!-- inicio da formatação das restrições do curso -->
+                <div style="display: none;" class="restricoes" id="restricoes">
+
+                    <div class="menu4"><button class="submenu3">Restriçãos do Curso de Programação</button></div>
+                    <div class="menu5">
+                        <button class="lista1">O pagamento deve ser feito pelo <i>intermediario</i> antes de acessar as aulas</i></i></button>
+                        <button class="lista1">O <i>Aluno(a)</i> tem que resover obrigatoriamente todas as tarefas</button>
+                        <button class="lista1"><i>O Aluno(a)</i> pode decidir si quero obter as aulas apartir do whatsapp </button>
+                        <button class="lista1">Revisão das aulas passadas, ocorrera todos os <i>Sabado e Domingo</i></button>
+                        <button class="lista1">O tempo estimado de ospedagem da lição no <i>site</i> e: <i>24:00 hora</i></button>
+                    </div>
+
+                </div>
+                
+                <!-- fim da formatação das restrições do curso -->
+
+                <!-- inicio da formatação dos horarios dos cursos -->
+                <div style="display: none;" class="horario" id="horario">
+
+                    <div class="menu4"><button class="submenu3">Horario Dos Cursos de Programação</button></div>
+                    <div class="menu5">
+                        <button class="lista1"><i>Segunda-Feira..:</i> Inicio 16:00 Hora / Fim 16:20 min</button>
+                        <button class="lista1"><i>Terça-Feira....:</i> Inicio 16:00 Hora / Fim 16:20 min</button>
+                        <button class="lista1"><i>Quarta-Feira...:</i> Inicio 16:00 Hora / Fim 16:20 min </button>
+                        <button class="lista1"><i>Quinta-Feira...:</i> Inicio 17:00 Hora / Fim 17:20 min</button>
+                        <button class="lista1"><i>Sexta-Feira....:</i> Inicio 16:00 Hora / Fim 16:20 min</button>
+                    </div>
+
+                </div>
+                
+                <!-- fim da formatação dos horarios dos cursos -->
+
+                <!-- inicio da formatação do Responsavel -->
+                <div style="display: none;" class="contactar" id="contactar">
+
+                    <div class="menu4"><button class="submenu3">Contactar o Responsavel</button></div>
+                    <div class="menu6">
+                         <button class="lista2"><i><a href="#">whatsapp</a></i></button>
+                         <button class="lista2"><i><a href="#">Gmail</a></button>
+                    </div>
+
+                </div>
+
+                <!-- fim da formatação do Responsavel -->
+
+                 <!-- inicio da formatação do cadastro -->
+                <div style="display: none;" class="cadastramento" id="cadastrar">
+
+                    <div class="menu4"><button class="submenu3">Cadastramento...</button></div>
+                    <div class="menu6">
+                        <div class="cadastro2">
+                            <h1 class="cadastrar1">Cadastro</h1>
+                            <input id="nomeAluno1" class="input1" type="text" placeholder="Nome" required>
+                            <input id="nomeAluno2" class="input1" type="text" placeholder="Apelido" required>
+                            <input is="senhaAluno1" class="input1" type="password" placeholder="Senha" required>
+                            <input id="senhaAluno2" class="input1" type="password" placeholder="Confirmar Senha" required>
+                            <button onclick="registrar()" type="submit" class="cadastrar">Cadastrar</button>
+                        </div>
+                    </div>
+
+                </div>
+                 <!-- fim da formatação do cadastro -->
+
+                 <!-- inicio da formatação do Login -->
+                 <div style="display: none;" class="login" id="cadastrar">
+
+                    <div class="menu4"><button class="submenu3">Iniciar cessão...</button></div>
+                    <div class="menu6">
+                        <div class="cadastro2">
+                            <h1 class="cadastrar1">Login</h1>
+                            <input id="Nome1" class="input1" type="text" placeholder="Nome" required>
+                            <input id="Senha1" class="input1" type="password" placeholder="Senha" required>
+                            <button onclick="Confirmar()" type="submit" class="cadastrar">Confirmar</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                 <!-- fim da formatação do Login -->
+
+                 <!-- inicio da formatação das listas de aluno -->
+
+                 <div style="display: none;" class="meus" id="cadastrar">
+
+                    <div class="menu4"><button class="submenu3">Iniciar cessão...</button></div>
+                    <div class="menu6">
+                        <div class="cadastro2">
+                            <h1 class="cadastrar1">Lista Dos Alunos</h1>
+                            <input id="senha2" class="senha2" type="password" placeholder="Digite a senha">
+                            <button onclick="aluno()" type="submit" class="aluno">Confirmar</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                 <!-- fim da formatação das lista de alunos -->
+
+                 <!-- inicio da formatação das lista dos alunos cadastrados -->
+
+                 <div style="display: none;" class="meuss" id="cadastrar">
+
+                    <div class="menu4"><button class="submenu3">Iniciar cessão...</button></div>
+                    <div class="menu6">
+                        <div class="cadastro2">
+                            <h1 class="cadastrar1">Lista Dos Alunos</h1>
+                            
+                            <div id="Lista" class="Lista">
+                                <button id="novo">Lista vazia</button>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                 <!-- fim da formatação das listas dos alunos cadastrados -->
+
+                 <!-- inicio da formatação das aulas de html -->
+
+                 <div style="display: none;" class="Obter" id="cadastrar">
+
+                    <div class="menu4"><button class="submenu3">Primeiro Modulo De <i>HTML</i></button></div>
+                    <div class="menu6">
+                        <div class="modulo2">
+
+                            <iframe class="video" src="v1.mp4" frameborder="0"></iframe>
+                            
+                        </div>
+                    </div>
+
+                </div>
+                
+
+                 <!-- fim da formatação das aulas de html -->
+
+                 <!-- inicio da formatação do poster da reprodução da aula -->
+
+
+                 <div style="display: none;" class="dedo" id="cadastrar">
+
+                    
+                    <div style="border-radius: 20px; border: 0px solid blue; height: 100%; background-image: url(dedo.jfif); background-size: cover;" class="menu6">
+
+                        
+                    </div>
+
+                </div>
+                
+
+                 <!-- fim da formatação do poster da reprodução da aula -->
+                  <!-- inicio da formatação do intermediario do cadastro -->
+
+                  <div style="display: none;" class="intermediario">
+                    <div class="menu4"><button class="submenu3">Intermediarios para o Cadastro</button></div>
+                    <div class="menu5">
+                        <button onclick="Aldair()" class="lista1">Aldair Almeida</button>
+                        <button onclick="Adelmo()" class="lista1">Adelmo o Bravo</button>
+                        <button onclick="Claudio()" class="lista1">Claudio Pedro Avelino</button>
+                        <button onclick="Elizandro()" class="lista1">Elizandro Martins Mais</button>
+                        <button onclick="Leonel()" class="lista1">Leonel Soares</button>
+                    </div>
+                </div>
+                
+
+                  <!-- fim da formatação do intermediario do cadastro -->
+
+                  <!-- inicio da formatação do Aldair -->
+
+                  <div style="display: none;" class="Aldair" id="contactar">
+
+                    <div class="menu4"><button class="submenu3">Contactar o Aldair Almeida</button></div>
+                    <div class="menu6">
+                         <button class="lista2"><i><a href="#">whatsapp</a></i></button>
+                         <button class="lista2"><i><a href="#">Gmail</a></button>
+                    </div>
+
+                </div>
+
+
+                  <!-- fim da formatação do Aldair -->
+                   <!-- inicio da formatação do Adelmo -->
+
+                   <div style="display: none;" class="Adelmo" id="contactar">
+
+                    <div class="menu4"><button class="submenu3">Contactar o Adelmo O Bravo</button></div>
+                    <div class="menu6">
+                         <button class="lista2"><i><a href="#">whatsapp</a></i></button>
+                         <button class="lista2"><i><a href="#">Gmail</a></button>
+                    </div>
+
+                </div>
+
+
+                    <!-- fim da formatação do Adelmo -->
+                    <!-- inicio da formatação do Claudio -->
+
+                    
+                   <div style="display: none;" class="Claudio" id="contactar">
+
+                    <div class="menu4"><button class="submenu3">Contactar o Claudio Avelino</button></div>
+                    <div class="menu6">
+                         <button class="lista2"><i><a href="https://chat.whatsapp.com/EXplsXu1IHOA3T4yZwDyyN">whatsapp</a></i></button>
+                         <button class="lista2"><i><a href="#">Gmail</a></button>
+                    </div>
+
+                </div>
+
+
+                    <!-- fim da formatação do Claudio -->
+                     <!-- inicio da formatação do Elizandro -->
+
+ 
+                     <div style="display: none;" class="Elizandro" id="contactar">
+
+                        <div class="menu4"><button class="submenu3">Contactar o Elizandro Martins</button></div>
+                        <div class="menu6">
+                             <button class="lista2"><i><a href="#">whatsapp</a></i></button>
+                             <button class="lista2"><i><a href="#">Gmail</a></button>
+                        </div>
+    
+                    </div>
+                        
+
+                    <!-- fim  da formatação do elizandro -->
+                     <!-- inicio da formatação do leonel soares -->
+
+                     
+                     <div style="display: none;" class="Leonel" id="contactar">
+
+                        <div class="menu4"><button class="submenu3">Contactar o Leonel Soares</button></div>
+                        <div class="menu6">
+                             <button class="lista2"><i><a href="#">whatsapp</a></i></button>
+                             <button class="lista2"><i><a href="#">Gmail</a></button>
+                        </div>
+    
+                    </div>
+                    
+
+                      <!-- fim da formatação do leonel soares -->
+
+                      <!-- inicio da formatação do login do primeiro  -->
+
+                      <div style="display: none;" class="exer1" id="cadastrar">
+
+                        <div class="menu4"><button class="submenu3">Exercicio Da Primeira semana</button></div>
+                        <div class="menu6">
+                            <div class="cadastro2">
+                                <h1 class="cadastrar1">Faça a confirmação da senha</h1>
+                                <input id="senha3" class="senha2" type="password" placeholder="Digite a senha">
+                                <button onclick="Exe1()" type="submit" class="aluno">Confirmar</button>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+    
+
+                      <!-- fim da formatação do login do primeiro exercicio -->
+
+                      <!-- inicio da formatação do primeiro exercicio -->
+
+                      <div style="display: none; margin-top: 6%;" class="ListaExer1">
+                        <div class="menu4"><button class="submenu3">Faz Uma Lista de Nome e coloca-os no centro do site</button></div>
+                        <div class="ll1">
+
+                            <div  class="listaExe1">
+                                <!-- inicio titulo exer1 -->
+                                <div class="convidados">
+                                    <button class="tt1">Lista Dos Convidados</button>
+                                </div>
+                                <!-- fim titulo exer1 -->
+                                <!-- inicio nome exercicio -->
+                                <div class="nomeExe1">
+                                    <button class="nom1">Wilson Figueira</button>
+                                    <button class="nom1">Ariclene Arnaldo</button>
+                                    <button class="nom1">Josimar ferreira</button>
+                                    <button class="nom1">Milton De Andrade</button>
+                                    <button class="nom1">Roberto de Oliveira</button>
+                                </div>
+                                <!-- fim nome exercicio -->
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+
+                      <!-- fim da formatação do primeiro Exercicio -->
+
+                      <!-- inicio da formatação dos exercicios indisponivle -->
+
+
+                      <div style="display: none;" class="indisponivel" id="cadastrar">
+
+                        <div class="menu4"><button class="submenu3">Cadastramento...</button></div>
+                        <div class="menu6">
+                      
+                            <button style="width: 60%; height: 15vh; border: none; outline: none; border-radius: 10px; background-color: #000; color: #fff; font-weight: bold; box-shadow: 0px 20px 30px #000;">Exercicio Indidponivel</button>
+
+                        </div>
+    
+                    </div>
+                    
+
+                      <!-- fim da formatação dos exercicios indisponiveis -->
+                       <!-- inidio da formatação da pagina principa -->
+
+
+                       <div style="display: block; border: 0px solid red;"  class="Fim" id="restricoes">
+
+                        
+                        <div class="fim">
+                            <button class="fim2">Smart School</button>
+                        </div>
+    
+                    </div>
+                    
+
+                       <!-- fim da formatação da pagina principal -->
+
+
+
+
+            </div>
+          
+        </div>
+
+        <div class="imagem">
+            <img class="img1" src="fundo12.jpg" alt="">
+        </div>
+
+    </section>
+
+    <!-- inicio da formatação da sect de baixo -->
+    <section style="width: 100%; height: 7vh; border: 0px solid blue; background-color: #000;" class="Baixo2">
+
+        <div style="width: 100%; height: 100%; display: flex; text-align: center;" class="baixo">
+
+            <button class="bb1">whatsapp</button>
+            <button class="bb1">Facebook</button>
+            <button class="bb1">Gmail</button>
+            <button class="bb1">instagram</button>
+
+
+        </div>
+
+    </section>
+
+    <!-- fim da formatação da sect de baixo -->
+
+
+<script src="tecnoLife.js"></script>
+</body>
+</html>
+
